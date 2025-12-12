@@ -6,10 +6,10 @@ export const register = async ({ email, password }) => {
   const userExists = await prisma.user.findUnique({ where: { email } });
   if (userExists) throw new Error("User already exists");
 
-  const hashed = await hashPassword(password);
+  const hashedPassword = await  hashPassword(password);
 
   const user = await prisma.user.create({
-    data: { email, password: hashed },
+    data: { email, password: hashedPassword },
   });
 
   const token = generateToken(user);
