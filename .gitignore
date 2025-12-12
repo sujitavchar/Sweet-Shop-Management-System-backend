@@ -1,0 +1,14 @@
+# Node
+node_modules/
+npm-debug.log
+
+# Environment
+.env
+.env.test
+
+# Prisma
+prisma/dev.db
+prisma/test.db
+prisma/*.db-journal
+
+/generated/prisma
