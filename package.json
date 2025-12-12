@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Sweet Shop Management System for Incubyte",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "node src/server.js",
     "test": "jest --runInBand"
