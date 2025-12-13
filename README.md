@@ -63,9 +63,8 @@ The project focuses on clean backend architecture, RESTful API design, database 
 
 ### Backend Setup
 1. Clone the repository
-2. Configure database credentials in `application.properties`
-3. Run the Spring Boot application
-4. Backend will be available at `http://localhost:8080`
+2. Run the nodejs application
+3. Backend will be available at `http://localhost:4000`
 
 ---
 
@@ -73,4 +72,17 @@ The project focuses on clean backend architecture, RESTful API design, database 
 - Backend logic is covered with unit and integration tests.
 - Tests are written following a TDD approach where possible.
 
-```bash
+## Project Status & Known Issues
+
+The backend API is implemented using **Node.js**, **PostgreSQL**, and **Prisma ORM**.  
+Core application structure, authentication flow, and API endpoints have been completed.
+
+During development, I encountered persistent issues related to **Prisma database migrations and client synchronization** with PostgreSQL in the given time constraints. Due to this blocker and parallel university examinations, I decided to halt further development at this stage.
+
+The issue is isolated to the ORM/database integration layer. With additional time, the next steps would be:
+- Re-initializing Prisma migrations with a clean schema
+- Verifying environment configuration consistency
+- Completing integration tests for database-dependent endpoints
+
+This decision was made to submit a transparent and honest snapshot of the work completed so far rather than rushing an unstable solution.
+
